@@ -1,4 +1,4 @@
-# Python-Job Shop Scheduling
+# Job Shop Scheduling with Python
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)<br>
 ### **內容概述**
 
