@@ -1,3 +1,6 @@
+## 最佳化流程
+<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%88%86%E6%9E%90%E5%95%8F%E9%A1%8C.png" width="650">
+
 # Python+Pulp基本架構
 
 ### ● 在利用Python+Pulp建構數學規劃時，通常會依照此順序進行設定變數、目標函數、限制式等
