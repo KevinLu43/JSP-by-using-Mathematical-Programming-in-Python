@@ -1,7 +1,7 @@
 ## (一)問題描述
  
 ### ● 題目:
- 
+There are j jobs and m machines; each job comprises a set of tasks1 which must each be done on a different machine for different specified processing times, in a given job-dependent order. Table 1 shows a standard 6 x 6 benchmark problem (ie, j = 6; m = 6), from (Muth & Thompson 1963).
 ### ● 已知:
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Data.JPG width="400">
 ### ● 目標:
