@@ -101,4 +101,5 @@ for var in dv:
 
 total_cost = pulp.value(model.objective)
 print ('min cost:',total_cost)
+min cost:55
 ```
