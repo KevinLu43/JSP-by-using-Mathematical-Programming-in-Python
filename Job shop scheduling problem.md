@@ -101,5 +101,8 @@ for var in dv:
 
 total_cost = pulp.value(model.objective)
 print ('min cost:',total_cost)
-min cost:55
 ```
+min cost:55
+
+### ● 甘特圖
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Known.JPG width="650">
