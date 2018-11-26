@@ -3,7 +3,7 @@
 ### ● 題目:
 
 ### ● 已知:
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Data.JPG width="650">
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Data.JPG width="1500">
 
 ### ● 目標:
 - 最小化完工時間
