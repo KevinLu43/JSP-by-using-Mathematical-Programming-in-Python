@@ -1,3 +1,10 @@
+*POLab*
+<br>
+*2018/12/01*
+<br>
+[【回到首頁】](https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python)
+
+
 ## (一)問題描述
  
 ### ● 題目:
