@@ -110,3 +110,7 @@ print ('min cost:',total_cost)
 min cost:55
 
 ### ● 甘特圖
+
+
+### ● Reference
+Cemal Özgüven, Lale Özbakır, Yasemin Yavuz(Mathematical models for job-shop scheduling problems with routing and process plan flexibility)
