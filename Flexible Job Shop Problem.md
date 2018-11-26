@@ -29,7 +29,7 @@
 - 目標式 :
 Min Cmax
 - 限制式:
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Constraints.JPG  width="650">
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Constraints.JPG  width="1500">
 
 ### (二)數學模型
 ## (三)Python+Pulp
