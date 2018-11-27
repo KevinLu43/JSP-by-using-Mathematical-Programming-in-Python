@@ -5,13 +5,6 @@
 [【回到首頁】](https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python)
 
 
-## Python+Pulp建模求解
-## 建模流程
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%BB%BA%E7%AB%8B%E7%92%B0%E5%A2%83.png" width="750">
-
-
-
-
 ## (一)問題描述
  
 ### ● 題目:
