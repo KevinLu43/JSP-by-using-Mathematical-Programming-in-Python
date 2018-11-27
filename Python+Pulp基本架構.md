@@ -1,3 +1,9 @@
+*POLab*
+<br>
+*2018/12/01*
+<br>
+[【回到首頁】](https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python)
+
 ## 最佳化流程
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E5%88%86%E6%9E%90%E5%95%8F%E9%A1%8C.png" width="650">
 
