@@ -25,10 +25,6 @@ There are j jobs and m machines; each job comprises a set of tasks1 which must e
 - j = job 
 - p_ij = processing time
 ### ● 決策變數
-```python
-import pulp 
-```
-
 - y_ij : starting time of operation(i,j)
 ```python
 dv = pulp.LpVariable.dicts("start_time",
