@@ -40,7 +40,6 @@ Min Cmax
 - 限制式:
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Constraints.JPG  width="650">
 
-### (二)數學模型
 ## (三)Python+Pulp
 ## Import pulp
 
@@ -120,4 +119,9 @@ min cost:55
 
 
 ### ● 甘特圖
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/G.jpg width="650">
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/G.jpg width="800">
+
+### Reference
+Michael L.Pinedo [SchedulingTheory, Algorithms, and Systems Fourth Edition](https://wp.nyu.edu/michaelpinedo/)
+
+J. F. Muth & G. L. Thompson (1963). Industrial Scheduling. Prentice Hall, Englewood Cliffs, New Jersey,1963.
