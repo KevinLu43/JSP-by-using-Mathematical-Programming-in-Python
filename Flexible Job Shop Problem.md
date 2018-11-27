@@ -141,4 +141,4 @@ print ('min cost:',total_cost)
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_G.JPG width="700">
 
 ### ● Reference
-Cemal Özgüven, Lale Özbakır, Yasemin Yavuz(Mathematical models for job-shop scheduling problems with routing and process plan flexibility)
+[Cemal Özgüven, Lale Özbakır, Yasemin Yavuz Mathematical models for job-shop scheduling problems with routing and process plan flexibility](https://www.sciencedirect.com/science/article/pii/S0307904X09002819)
