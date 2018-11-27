@@ -8,7 +8,7 @@
 ## (一)問題描述
  
 ### ● 題目:
-
+-
 ### ● 已知:
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Data.JPG width="1500">
 
@@ -22,6 +22,7 @@
 ### (二)數學模型
 
 ### ● Notation
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Notation.JPG width="1500">
 
 ### ● 決策變數
 
@@ -29,7 +30,7 @@
 - 目標式 :
 Min Cmax
 - 限制式:
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_Constraints.JPG  width="1500">
+<img src=  width="1500">
 
 ### (二)數學模型
 ## (三)Python+Pulp
