@@ -13,11 +13,12 @@
 <img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/pulp%20flow.png" >
 
 ### ● Import Module
-python中一開始要先import Module才可以做使用，分為兩種方式:
- 
+### python中一開始要先調用 Module才可以使用，調用方式常見的有兩種:
+1. 
  ```python
 import pulp
 ```
+2.
 ```python
 from pulp import*
 ```
