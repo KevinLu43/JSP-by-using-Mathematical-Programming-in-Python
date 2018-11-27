@@ -27,48 +27,41 @@ There are j jobs and m machines; each job comprises a set of tasks1 which must e
 - 每個工作必須遵守一定的順序
 
 ### (二)數學模型
-
 ### ● Notation
 - i = machine 
 - j = job 
 ### ● 決策變數
-- y_ij : starting time of operation(i,j)
-- Cmax : makespan
-### ● 數學式
-- 目標式 :
-Min Cmax
-- 限制式:
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Constraints.JPG  width="650">
-
-## (三)Python+Pulp
-## Import pulp
-
 ```python
 import pulp 
 ```
 
-## Model
-- 定義問題
+- y_ij : starting time of operation(i,j)
 ```python
-model = pulp.LpProblem("MIN_makespan", pulp.LpMinimize)
-```
-
-## Add decision variables
-- 儲存決策變數
-```python
-dv = pulp.LpVariable.dicts("start_time",
+y_ij = pulp.LpVariable.dicts("start_time",
                                      ((i, j) for i in range(6) for j in range(6)),
                                      lowBound=0,
                                      cat='Continuous')
-b =  pulp.LpVariable.dicts("binary_var",
-                                     ((i, j,o) for i in range(6) for j in range(6) for o in range(6) if o!=j),
-                                     lowBound=0,
-                                     cat='Binary')
-
+```
+- Cmax : makespan
+```python
 Cmax = pulp.LpVariable('Cmax',lowBound = 0, cat='Continuous')
 ```
+- b : binary
+```python
+b =  pulp.LpVariable.dicts("binary_var",
+                                     ((i, j,o) for i in range(6) for j in range(6) for o in range(6) if j<o),
+                                     lowBound=0,
+                                     cat='Binary')
+```
 
-## Add objective function
+### ● 數學式
+- 目標式 :
+Min Cmax
+```python
+model = pulp.LpProblem("MIN_makespan", pulp.LpMinimize)
+```
+- 限制式:
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Constraints.JPG  width="650">
 
 ```python
 #加入目標式
