@@ -138,7 +138,7 @@ print ('min cost:',total_cost)
 ```
 -min cost: 193.0
 ### ● 甘特圖
-
+<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_G.JPG width="700">
 
 ### ● Reference
 Cemal Özgüven, Lale Özbakır, Yasemin Yavuz(Mathematical models for job-shop scheduling problems with routing and process plan flexibility)
