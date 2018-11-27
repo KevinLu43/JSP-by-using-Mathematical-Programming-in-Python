@@ -20,10 +20,10 @@
 ### (二)數學模型
 
 ### ● Notation
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_Notation.JPG width="800">
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_Notation.JPG width="950">
 
 ### ● 決策變數
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_DV.JPG width="450">
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_DV.JPG width="850">
 
 ```python
 Cmax = pulp.LpVariable('Cmax',lowBound = 0, cat='Continuous')
