@@ -20,6 +20,8 @@ import pulp
 ```python
 from pulp import*
 ```
+較不推薦使用，容易造成衝突，並降低可讀性與維護性
+更詳盡的說明請參考[這裡](https://medium.com/pyladies-taiwan/python-%E7%9A%84-import-%E9%99%B7%E9%98%B1-3538e74f57e3)
 
 ### ● 建模時常使用for迴圈及if條件句
 -**for迴圈**
