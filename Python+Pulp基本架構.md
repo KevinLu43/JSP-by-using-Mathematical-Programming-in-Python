@@ -62,7 +62,7 @@ if <condition>:
 
 |Attribute Name|Description|
 |-----|-----|
-|**slove()**|slove the problem|
+|**solve()**|slove the problem|
 ```python
 model.solve()
 ```
