@@ -66,22 +66,6 @@ model += Cmax
 - 限制式:
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C1.JPG width="250">
 
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C2.JPG width="400">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C3.JPG width="500">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C4.JPG width="500">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C5.JPG width="500">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C6.JPG width="300">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C7.JPG width="200">
-
-<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C8.JPG width="200">
-
-
-
 ```python
 #加入限制式
 ###限制式###
@@ -89,7 +73,11 @@ for i in range(1,6):
     for j in [ops[i-1][o] for o in range(1,5) if ops[i-1][o]!=0]:
         ma_list=list(Processing_time.loc[(Processing_time['Operation']==j),'machine'])
         model += pulp.lpSum(x[i,j,ma] for ma in ma_list)==1
-  
+```
+
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C2.JPG width="400">
+
+```python
 for i in range(1,6):
     for j in [ops[i-1][o] for o in range(1,5) if ops[i-1][o]!=0]:
         ma_list=list(Processing_time.loc[(Processing_time['Operation']==j),'machine'])
@@ -100,8 +88,13 @@ for i in range(1,6):
             K = k
             model += st[I,J,K] + ct[I,J,K] <=x[I,J,K]*1000
             model += ct[I,J,K] >= st[I,J,K] +ptime-(1-x[I,J,K])*1000
+```
 
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C3.JPG width="500">
 
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C4.JPG width="500">
+
+```python
 for i in range(1,6):
     for l in range(1,6):
         if i<l:
@@ -114,6 +107,24 @@ for i in range(1,6):
                         for k in mach_set:
                             model += st[i,o1,k]>=ct[l,o2,k]-y[i,o1,l,o2,k]*1000
                             model += st[l,o2,k]>=ct[i,o1,k]-(1-y[i,o1,l,o2,k])*1000
+```
+
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C5.JPG width="500">
+
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C6.JPG width="300">
+
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C7.JPG width="200">
+
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C8.JPG width="200">
+
+
+
+
+  
+
+
+
+
 
 for i in range(1,6):
     op_num=[ops[i-1][o] for o in range(1,5) if ops[i-1][o]!=0]
