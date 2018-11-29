@@ -64,9 +64,9 @@ model = pulp.LpProblem("MIN_makespan", pulp.LpMinimize)
 model += Cmax
 ```
 - 限制式:
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_CFirst.JPG  width="450">
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C1.JPG  width="400">
 
-<img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/FJSP_CFinal.JPG  width="650">
+<img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C2.JPGG  width="400">
 
 
 
