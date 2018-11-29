@@ -66,6 +66,8 @@ model += Cmax
 - 限制式:
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C1.JPG width="250">
 
+- 確保Operation只在一台機台被執行
+
 ```python
 #加入限制式
 ###限制式###
@@ -78,6 +80,8 @@ for i in range(1,6):
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C2.JPG width="400">
 
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C3.JPG width="500">
+
+- 如果第i個Job的第j個Operation在Machine k上執行，那他的Operation結束時間要大於等於開始時間+作業時間，沒有被執行的Operation，開始與結束時間等於0
 
 ```python
 for i in range(1,6):
@@ -96,6 +100,8 @@ for i in range(1,6):
 
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C5.JPG width="500">
 
+- 如果兩個Operation要使用相同機台，確保他們不會同時執行
+
 ```python
 for i in range(1,6):
     for l in range(1,6):
@@ -111,9 +117,9 @@ for i in range(1,6):
                             model += st[l,o2,k]>=ct[i,o1,k]-(1-y[i,o1,l,o2,k])*1000
 ```
 
-
-
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C6.JPG width="300">
+
+- 確保每一個Job的Operation的順序，一定要前一個完成才能進行下一個Operation
 
 ```python
 for i in range(1,6):
@@ -132,6 +138,8 @@ for i in range(1,6):
 
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C7.JPG width="200">
 
+- 確保每一個工作的最後完成時間是每一個工作最後一個Operation完成後的時間
+
 ```python
 for i in range(1,6):
     op_list=[ops[i-1][o] for o in range(1,5) if ops[i-1][o]!=0]
@@ -140,6 +148,8 @@ for i in range(1,6):
 ```
 
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C8.JPG width="200">
+
+- 定義Makespan
 
 ```python
     model += Cmax >= Ci[i]
