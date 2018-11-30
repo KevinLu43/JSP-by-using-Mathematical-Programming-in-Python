@@ -35,10 +35,10 @@ if <condition>:
  <do something if condition is true here>
 ```
 
-## 常用的四大函數及屬性
-### 1.四大函數
-在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的四大函數的詳細內容介紹
-<br>P.S. 在pulp中設定目標函數及限制式還有其他不一樣的方式，在此只介紹這四個函數的應用，若想要有更進一步的了解可至[pulp網站](https://pythonhosted.org/PuLP/pulp.html)內的查詢
+## 常用的函數及屬性
+### 1.函數
+在建立一個數學規劃時，我們必須加入我們的決策變數、目標函數及限制式，以下是在設定這些變數及式子常用的函數內容介紹，
+在pulp中設定目標函數及限制式還有其他不一樣的方式，更進一步的了解請參考[pulp網站](https://pythonhosted.org/PuLP/pulp.html)內的查詢
 
 ### ● 定義問題(Formulate Problem)
 
@@ -46,23 +46,35 @@ Problem = pulp.LpProblem(name_str, sense)
 
 sense ∈ {pulp.LpMinimize,pulp.LpMaximize}
 
-E.g. Maximization problem
+- E.g. Maximization problem
 
-problem = pulp.LpProbl(‘Benefit’,pulp.LpMaximize)
-
+```python
+problem = pulp.LpProblem(‘Benefit’,pulp.LpMaximize)
+```
 
 ### ● 決策變數函數(Create Decision Variables)
 
- 變數預設的範圍上限為正無限，下限為負無限，變數型態為連續變數(continuous)<br>
- 
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E8%AE%8A%E6%95%B8.png" width="700"><br>
+變數預設的範圍上限為正無限，下限為負無限，變數型態為連續變數(continuous)<br>
 
-### ● 目標函數(Add Objective Function)
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E7%9B%AE%E6%A8%99%E5%BC%8F.png" width="500"><br>
+Decision_Variable = pulp.LpVariable(name_str, lowbound, upbound, category)
+
+category ∈ {Continuous, Integer, Binary}
+
+E.g. x ∈ [0,∞]
+
+```python
+X = pulp.LpVariable(‘VarX’, 0, None, cat=‘Continuous’)
+```
 
 ### ● 限制式函數(Add Constraints)
-<img src="https://github.com/jasonyoyo/python-pulp/blob/master/picture/%E9%99%90%E5%88%B6%E5%BC%8F.png" width="500">
 
+problem+=linear_constraint, constraint_name_str
+
+E.g. Cost: 2X1 - 3X2 ≤100
+
+```python
+problem += 2*X1 – 3*X2 <= 100, ‘Cost’
+```
 
 ### 2.Pulp attributes
 在pulp中，可以透過各種屬性來查詢或更改所建立數學規劃的內容，以下為常用的幾個屬性:
@@ -71,7 +83,7 @@ problem = pulp.LpProbl(‘Benefit’,pulp.LpMaximize)
 
 |Attribute Name|Description|
 |-----|-----|
-|**solve()**|slove the problem|
+|**solve()**|solve the problem|
 ```python
 model.solve()
 ```
