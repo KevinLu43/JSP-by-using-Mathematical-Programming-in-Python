@@ -57,6 +57,7 @@ model += Cmax
 ```
 - 限制式:
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/JSP_Constraints.JPG  width="650">
+<img src=https://github.com/wurmen/Genetic-Algorithm-for-Job-Shop-Scheduling-and-NSGA-II/blob/master/implementation%20with%20python/GA-jobshop/picture/4.png width="350">
 
 
 ```python
