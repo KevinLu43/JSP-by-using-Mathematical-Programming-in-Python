@@ -67,6 +67,7 @@ model += Cmax
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_C1.JPG width="250">
 
 - 確保Operation只在一台機台被執行
+<img src=https://github.com/wurmen/Genetic-Algorithm-for-Job-Shop-Scheduling-and-NSGA-II/blob/master/implementation%20with%20python/GA-jobshop/picture/4.png width="350">
 
 ```python
 #加入限制式
