@@ -102,6 +102,8 @@ print ('min cost:',total_cost)
 #min cost:55
 
 ### ● 甘特圖
+- 此處繪圖套件使用plotly，詳細套件說明請參考[這裡](https://plot.ly/python/)
+
 <img src=https://github.com/KevinLu43/Job-Shop-Scheduling-with-Python/blob/master/Picture/G.jpg width="800">
 
 ### Reference
