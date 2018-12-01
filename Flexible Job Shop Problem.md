@@ -8,7 +8,10 @@
 ## (一)問題描述
  
 ### ● 題目:
+- 加工順序
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_OS.JPG width="650">
+
+- 加工時間
 
 <img src=https://github.com/KevinLu43/JSP-by-using-Mathematical-Programming-in-Python/blob/master/Picture/FJSP_PT.JPG width="450">
 
