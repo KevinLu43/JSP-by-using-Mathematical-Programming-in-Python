@@ -49,7 +49,7 @@ sense ∈ {pulp.LpMinimize,pulp.LpMaximize}
 - E.g. Maximization problem
 
 ```python
-problem = pulp.LpProblem(‘Benefit’,pulp.LpMaximize)
+problem = pulp.LpProblem('Benefit',pulp.LpMaximize)
 ```
 
 ### ● 決策變數函數(Create Decision Variables)
@@ -63,7 +63,7 @@ category ∈ {Continuous, Integer, Binary}
 E.g. x ∈ [0,∞]
 
 ```python
-X = pulp.LpVariable(‘VarX’, 0, None, cat=‘Continuous’)
+X = pulp.LpVariable('VarX', 0, None, cat='Continuous')
 ```
 
 ### ● 限制式函數(Add Constraints)
@@ -73,7 +73,7 @@ problem+=linear_constraint, constraint_name_str
 E.g. Cost: 2X1 - 3X2 ≤100
 
 ```python
-problem += 2*X1 – 3*X2 <= 100, ‘Cost’
+problem += 2*X1 – 3*X2 <= 100, 'Cost'
 ```
 
 ### 2.Pulp attributes
