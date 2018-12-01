@@ -110,4 +110,4 @@ print ('min cost:',total_cost)
 ### Reference
 Michael L.Pinedo [SchedulingTheory, Algorithms, and Systems Fourth Edition](https://wp.nyu.edu/michaelpinedo/)
 
-J.F.Muth & G.L.Thompson(1963). Industrial Scheduling. Prentice Hall, Englewood Cliffs, New Jersey,1963.
+J.F.Muth & G.L.Thompson. Industrial Scheduling. Prentice Hall, Englewood Cliffs, New Jersey,1963.
